@@ -9,6 +9,7 @@ GEM
     rack (2.0.4)
     rack-protection (2.0.0)
       rack
+    redis (4.0.1)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -22,6 +23,7 @@ PLATFORMS
 DEPENDENCIES
   config_env
   httparty
+  redis
   sinatra
 
 BUNDLED WITH
