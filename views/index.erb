@@ -6,7 +6,7 @@
 
 <body>
 	<main>
-		<h2>The weather right now in San Francisco</h2>
+		<h2>The weather right now in <%= @city %></h2>
 		<h1><%= @temp %>&deg;</h1>
 		<div>
 			<% @icons.each do |icon| %>
