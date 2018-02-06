@@ -1,9 +1,31 @@
 <html>
-	<head>
-    <link href="/style.css" rel="stylesheet" />
-	</head>
-	<body>
+
+<head>
+	<link href="/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<main>
 		<h2>The weather right now in San Francisco</h2>
 		<h1><%= @temp %>&deg;</h1>
-	</body>
+		<div>
+			<% @icons.each do |icon| %>
+				<img src="<%= icon %>" alt="weather icon"/>
+			<% end %>
+		</div>
+	</main>
+	<footer>
+		<ul>
+			<% @cities.each do |city| %>
+				<li><a href="/?city=<%= URI.escape(city) %>"><%= city %></a></li>
+			<% end %>
+		</ul>
+		<p>
+			Built with <heart>❤️</heart>
+			by <a href="http://github.com/jwmunn">Justin Munn</a>.
+			Icons by <a href="flaticon.com">flaticon</a>.
+		</p>
+	</footer>
+</body>
+
 </html>
