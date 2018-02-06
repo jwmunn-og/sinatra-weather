@@ -1,6 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    config_env (0.1.2)
+    httparty (0.15.6)
+      multi_xml (>= 0.5.2)
+    multi_xml (0.6.0)
     mustermann (1.0.1)
     rack (2.0.4)
     rack-protection (2.0.0)
@@ -16,6 +20,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  config_env
+  httparty
   sinatra
 
 BUNDLED WITH
