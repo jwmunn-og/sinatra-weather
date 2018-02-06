@@ -19,7 +19,7 @@ get '/' do
     "Cairo"
   ]
 
-  @city = params[:city] || "San Francisco"
+  @city = params[:city] || "Seattle"
   weather = Weather.new(@city)
   @temp = weather.temp
   @icons = weather.icons
