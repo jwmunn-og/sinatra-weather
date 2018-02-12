@@ -14,12 +14,13 @@ get '/' do
   @cities = [
     "Seattle",
     "San Francisco",
-    "London",
-    "Tokyo",
-    "Cairo"
+    "Denver",
+    "New York",
+    "Raleigh"
   ]
 
   @city = params[:city] || "Seattle"
+  @city_class = @city.delete(' ').downcase
   weather = Weather.new(@city)
   @temp = weather.temp
   @icons = weather.icons

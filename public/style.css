@@ -40,6 +40,7 @@ body {
 	letter-spacing: 0.4px;
 	margin: 0;
 	padding: 0;
+	background-size: cover;
 }
 
 main {
@@ -88,7 +89,7 @@ footer {
   flex-direction: column;
 	width: 100%;
 	font-size: 22px;
-	color: #1F1F1F;
+	color: rgba(255,255,255,.9);
 }
 
 
@@ -115,7 +116,6 @@ ul {
 	-webkit-flex-direction: row;
 	flex-direction: row;
 	padding: 10px;
-	background-color: #1F1F1F;
 }
 
 li {
@@ -175,6 +175,33 @@ heart {
   color: red;
   -webkit-animation: .8s infinite beat;
 	animation: .8s infinite beat;
+}
+
+.seattle {
+	background-image: url('seattle-lo.jpg');
+}
+
+.sanfrancisco {
+	background-image: url('sanfrancisco-lo.jpg');
+}
+
+.denver {
+	background-image: url('denver-lo.jpg');
+}
+
+.newyork {
+	background-image: url('newyork-lo.jpg');
+}
+
+.raleigh {
+	background-image: url('raleigh-lo.jpg');
+}
+
+footer {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
 }
 
 @media only screen and (max-width: 850px) {
