@@ -197,6 +197,10 @@ heart {
 	background-image: url('raleigh-lo.jpg');
 }
 
+.austin {
+	background-image: url('austin-lo.jpg');
+}
+
 footer {
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%);
@@ -233,6 +237,10 @@ footer {
 
 	h2 {
 		font-size: 22px;
+	}
+
+	ul {
+		flex-direction: column;
 	}
 
 	footer {

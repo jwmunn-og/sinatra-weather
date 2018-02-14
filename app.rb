@@ -15,6 +15,7 @@ get '/' do
     "Seattle",
     "San Francisco",
     "Denver",
+    "Austin",
     "New York",
     "Raleigh"
   ]
